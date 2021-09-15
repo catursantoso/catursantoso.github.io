@@ -1,0 +1,162 @@
+/* Scrollbar */
+body::-webkit-scrollbar {
+    width: 1em;
+}
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+body::-webkit-scrollbar-thumb {
+    background-color: darkgrey;
+    outline: 1px solid slategrey;
+}
+
+/* Navbar */
+.navbar{
+    position: relative;
+    z-index: 1;
+}
+.navbar-brand{
+    font-family: Mate SC, serif;
+    /* color: white ; */
+}
+
+/* Jumbotron */
+.jumbotron{
+    background-image: url(https://images.wallpaperscraft.com/image/single/shore_sky_ocean_beautiful_84431_1280x720.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-y: bottom;
+    height: 720px;
+    position: relative;
+}
+.jumbotron::after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgb(0, 0, 0), rgba(0, 0, 0, 0));
+    position: absolute;
+    bottom: 0;
+}
+.jumbotron .display-4{
+    margin-top: 200px;
+}
+.jumbotron h1{
+    font-weight: 400;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7) !important;
+    position: relative;
+    z-index: 1;
+}
+.jumbotron p{
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7) !important;
+    position: relative;
+    z-index: 1;
+}
+/* Info panel */
+.info-panel{
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    background-color: white;
+    margin-top: -85px;
+    padding: 10px;
+}
+.info-panel img{
+    float: left;
+    width: 80px;
+    height: 80px;
+}
+.info-panel h4{
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.info-panel p{
+    font-size: 14px;
+    color: #ACACAC;
+    margin-top: -4px;
+    font-weight: 200;
+}
+
+/* discover */
+.discover{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.discover img{
+    border-radius: 20px;
+}
+.discover h2{
+    text-transform: uppercase;
+    font-size: 52px;
+    font-weight: 200;
+    margin-top: 20px;
+}
+.discover p{
+    margin-bottom: 50px;
+}
+.discover span{
+    font-weight: bold;
+}
+
+/* footer */
+.information{
+    text-align: center;
+}
+.information a{
+    margin-left: 5px;
+    color: #ACACAC;
+    font-size: large;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+.information a:hover{
+    color: rgba(0, 255, 255, 0.459);
+}
+.information h3{
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+.logo{
+    text-align: center;
+}
+.cpyrght span{
+    font-family: Mate SC, serif;
+}
+
+/* utility */
+.tombol{
+    border-radius: 40px;
+    text-transform: uppercase;
+}
+
+
+
+/* DESKTOP VERSION */
+@media (min-width: 992px) {
+    .jumbotron{
+        margin-top: -56px;
+    }
+    .nav-link, .navbar-brand{
+        color: white !important;
+        text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7) !important;
+    }
+    .nav-link:hover::after{
+        border-bottom: 3px solid rgb(161, 0, 0);
+        content: '';
+        display: block;
+        width: 50%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .logo{
+        text-align: center !important;
+    }
+    .information{
+        text-align: left;
+    }
+    
+
+}
